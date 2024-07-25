@@ -1,0 +1,7 @@
+#line 1 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\.vscode\\arduino.json"
+{
+    "sketch": "180724.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "COM5"
+}
