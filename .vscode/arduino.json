@@ -2,5 +2,5 @@
     "sketch": "180724.ino",
     "output": "build",
     "board": "arduino:avr:uno",
-    "port": "COM5"
+    "port": "COM11"
 }
