@@ -1,7 +1,7 @@
-#line 1 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\.vscode\\arduino.json"
+#line 1 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\.vscode\\arduino.json"
 {
-    "sketch": "180724.ino",
+    "sketch": "TIMER-7SEG-CD4026.ino",
     "output": "build",
     "board": "arduino:avr:uno",
-    "port": "COM5"
+    "port": "COM11"
 }

@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
@@ -6,6 +8,9 @@ int counter = 1;
 int countdec = 1;
 int counterst = 1;
 
+#line 9 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+int main(void);
+#line 9 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
 int main(void){
 
     cli();
@@ -45,7 +50,7 @@ ISR(TIMER0_OVF_vect){
           PORTD &= (0<<3);
           countdec = 1;
           counterst++;
-          if(counterst == 7){
+        if(counterst == 7){
           counterst = 1;
           //Serial.print("rodourst");
           PORTD |= (1<<4);
@@ -53,23 +58,4 @@ ISR(TIMER0_OVF_vect){
         }
         }
     }
-    //PORTD &= (0<<2);
-
-    
-
-    /*
-    if(countdec == 10){
-        PORTD = PORTD | (1<<3);
-        countdec = 1;
-        counterst++;
-        if(counterst == 6){
-          counterst = 1;
-          //Serial.print("rodourst");
-          PORTD |= (1<<4);
-        }
-        PORTD &= (0<<4);
-
-    }   
-    PORTD |= (0<<3);
-  */
 }

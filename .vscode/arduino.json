@@ -1,5 +1,5 @@
 {
-    "sketch": "180724.ino",
+    "sketch": "TIMER-7SEG-CD4026.ino",
     "output": "build",
     "board": "arduino:avr:uno",
     "port": "COM11"

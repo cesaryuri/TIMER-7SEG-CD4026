@@ -1,89 +1,159 @@
-# 1 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
-# 2 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 2
-# 3 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 2
-# 4 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 2
+# 1 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+# 2 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 2
+# 3 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 2
+# 4 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 2
 
 
-# 5 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
-int counter = 0;
+# 5 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+int counter = 1;
+int countdec = 1;
+int counterst = 1;
+
 int main(void){
 
     
-# 8 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 11 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    __asm__ __volatile__ ("cli" ::: "memory")
-# 8 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 11 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
         ;
     
-# 9 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 12 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)((0x0A) + 0x20)) 
-# 9 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
-        |=(1<<7);
+# 12 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+        |=(1<<2);
     
-# 10 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 13 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0A) + 0x20)) 
+# 13 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+        |=(1<<3);
+    
+# 14 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0A) + 0x20)) 
+# 14 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+        |=(1<<4);
+    
+# 15 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0A) + 0x20)) 
+# 15 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+        |=(1<<5);
+
+    
+# 17 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)((0x0B) + 0x20)) 
-# 10 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
-         &=~(1<<7);
+# 17 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+         |= (1<<4);
     
-# 11 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 18 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 18 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+         &= (0<<4);
+    
+# 19 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 19 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+         |= (1<<5);
+    
+# 20 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+   (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 20 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+         &= (0<<5);
+
+    //PORTD &=~(1<<2);
+
+    
+# 24 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)((0x26) + 0x20)) 
-# 11 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 24 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
          = 130;
     
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)((0x25) + 0x20)) 
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
           = 
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
             (*(volatile uint8_t *)((0x25) + 0x20)) 
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
                    | (1<<
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
                          2
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
                              ) | (1<<
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
                                      0
-# 12 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 25 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
                                          );
     
-# 13 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 26 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)(0x6E))
-# 13 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 26 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
          =(1<<
-# 13 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 26 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
               0
-# 13 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 26 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
                    );
     
-# 14 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 27 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    __asm__ __volatile__ ("sei" ::: "memory")
-# 14 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 27 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
         ;
     while(1){};
 
 }
 
 
-# 19 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 32 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
 extern "C" void __vector_16 /* Timer/Couner0 Overflow */ (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_16 /* Timer/Couner0 Overflow */ (void)
-# 19 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 32 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
                    {
 
     counter++;
     
-# 22 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
+# 35 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
    (*(volatile uint8_t *)((0x26) + 0x20))
-# 22 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
+# 35 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
         =130;
-    if(counter == 125){
+    //125
+    if(counter == 60){
 
         
-# 25 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino" 3
-       (*(volatile uint8_t *)((0x0B) + 0x20))
-# 25 "C:\\Users\\cesar\\Documents\\GitHub\\180724\\180724.ino"
-            ^=(1<<7);
-        counter = 0;
-        Serial.print("rodou");
+# 39 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+       (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 39 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+             |= (1<<2);
+        
+# 40 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+       (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 40 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+             &= (0<<2);
+        counter = 1;
+        countdec++;
+        if(countdec == 11){
+          
+# 44 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+         (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 44 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+               |= (1<<3);
+          
+# 45 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+         (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 45 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+               &= (0<<3);
+          countdec = 1;
+          counterst++;
+        if(counterst == 7){
+          counterst = 1;
+          //Serial.print("rodourst");
+          
+# 51 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+         (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 51 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+               |= (1<<4);
+          
+# 52 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino" 3
+         (*(volatile uint8_t *)((0x0B) + 0x20)) 
+# 52 "C:\\Users\\cesar\\Documents\\GitHub\\TIMER-7SEG-CD4026\\TIMER-7SEG-CD4026.ino"
+               &= (0<<4);
+        }
+        }
     }
-
 }
